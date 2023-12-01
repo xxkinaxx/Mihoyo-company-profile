@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato&family=Montserrat:wght@500&family=Noto+Sans+JP:wght@500&family=Nunito:wght@500;600&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato&family=Montserrat:wght@500&family=Noto+Sans+JP:wght@500&family=Nunito:wght@500;600&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    z-index: 100;
+    top: 0;
+}
+.navbar-brand img{
+    width: 75px;
+}
+.nav-item{
+    border-radius: 20px;
+    padding: 0 10px;
+    transition: .5s;
+}
+.nav-item:active{
+    background: rgb(93, 220, 255);
+    color: white;
+}
+.nav-item:hover{
+    background: rgb(93, 220, 255);
+    color: white;
+}
+.home{
+    background-image: url(img/home-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100svh;
+}
+.home h1{
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    cursor: default;
+}
+.home h1 span{
+    color: rgb(93, 220, 255);
+}
+.shadow{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about{
+    background-image: url(img/ABOUT\ US.jpg);
+    background-size: cover;
+    min-height: 100svh;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wrapper{
+    width: 70%;
+}
+.vision-wrapper{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 50px;
+}
+.vision-wrapper h2{
+    margin-bottom: 30px;
+}
+.vision-wrapper h1{
+    color: rgb(211, 47, 240);
+    font-weight: 100;
+}
+.about-wrapper{
+    font-family: 'Ubuntu', sans-serif;
+}
+.about-wrapper h2{
+    margin-bottom: 30px;
+}
+.about-wrapper p{
+    margin-bottom: 20px;
+    color: rgb(88, 88, 88);
+}
+.product{
+    width: 100%;
+    background-image: url(img/OUR\ PRODUCT.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    height: 720px;
+}
+#carouselExampleIndicators{
+    width: 85%;
+    padding: 50px 25px;
+}
+.img-wrapper{
+    position: absolute;
+    width: 50%;
+    margin-top: 10%;
+    clip-path: polygon(11% 0, 100% 0%, 77% 100%, 0% 100%);
+    z-index: 1;
+}
+.desc{
+    float: right;
+    width: 70%;
+    background: rgba(88, 88, 88,0.5);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 70px 0 230px;
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+}
+button{
+    background: rgba(88, 88, 88,0.5);
+}
+.careers{
+    width: 100%;
+    background-image: url(img/CAREERS.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    height: 720px;
+}
+#careers-content{
+    display: flex;
+    flex-direction: column;
+}
+.offer1{
+    background: rgb(0, 160, 204);
+    margin-left: 35%;
+    margin-bottom: 50px;
+    padding: 20px;
+    transition: .5s;
+    clip-path: polygon(11% 0, 100% 0%, 77% 100%, 0% 100%);
+}
+.offer2{
+    background: rgb(0, 160, 204);
+    margin-left: 35%;
+    padding: 20px;
+    transition: .5s;
+    clip-path: polygon(11% 0, 100% 0%, 77% 100%, 0% 100%);
+}
+.offer1 a, .offer2 a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.offer1:hover, .offer2:hover{
+    background: rgb(50, 50, 50);
+}
+.join-wrapper{
+    margin-left: 100px;
+    transition: .5s;
+}
+.join-wrapper h2{
+    font-size: 20px;
+}
+.join{
+    background: rgba(88, 88, 88,0.5);
+    position: relative;
+    margin-top: 20px;
+    margin-right: 40%;
+    height: 67px;
+    overflow: hidden;
+    clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+}
+.inside{
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    z-index: 5;
+    transition: .5s;
+    background-color: rgb(150, 232, 255);
+    padding: 20px;
+}
+.join:hover{
+    height: 100%;
+}
+.title{
+    padding: 20px 20px 7px 20px;
+}
+.title .p2{
+    font-size: 10px;
+    margin-top: 20px;
+}
+.tab{
+    width: 33%;
+}
+.tab2{
+    width: 50%;
+}
+.tab p, .tab2 p{
+    font-size: 10px;
+}
